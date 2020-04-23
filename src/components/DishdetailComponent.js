@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
-import { comment } from 'postcss';
 import{Link} from 'react-router-dom';
 
 function RrenderDish({dish}) {
