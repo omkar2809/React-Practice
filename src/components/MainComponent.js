@@ -17,7 +17,7 @@ class Main extends Component {
         super(props);
         this.state = {
             dishes: DISHES,
-            comments : COMMENTS,
+            comments : COMMENTS, 
             promotions: PROMOTIONS,
             leaders: LEADERS
         };
