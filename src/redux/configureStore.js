@@ -1,10 +1,17 @@
-import {createStore} from 'redux';
-import {Reduser, initialState} from './reducer';
+import {createStore, combineReducers} from 'redux';
+import {Dishes} from './dishes';
+import {Comments} from './Comments';
+import {Promotions} from './Promotions';
+import {Leaders} from './Leaders';
 
 export const ConfigureStore = () => {
     const store = createStore(
-        Reduser,
-        initialState
+        combineReducers({
+            dishes: Dishes,
+            comments: Comments,
+            promotions: Promotions,
+            leaders: Leaders
+        })
     );
 
     return store;
