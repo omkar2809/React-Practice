@@ -3,7 +3,7 @@ import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } 
 import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
 
-function RenderMenuItem({ dish, onClick }) {
+function RenderMenuItem({ dish }) {
     return (
         <Card>
             <Link to={`/menu/${dish.id}`} >
@@ -43,7 +43,7 @@ const Menu = props => {
             </div>
         );
     }
-    else
+    else {
         return (
             <div className="container">
                 <div className="row">
@@ -61,6 +61,7 @@ const Menu = props => {
                 </div>
             </div>
         );
+    }
 }
 
 export default Menu;

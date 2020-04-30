@@ -1,6 +1,5 @@
 import * as ActionTypes from './actionTypes';
 import { DISHES } from '../shared/dishes';
-import { actionTypes } from 'react-redux-form';
 
 export const addComment = (dishId, rating, author, comment) => ({
     type: ActionTypes.ADD_COMMENT,
@@ -17,7 +16,7 @@ export const fetchDishes = () => (dispatch) => {
 
     setTimeout(() => { 
         dispatch(addDishes(DISHES));
-     }, 2000);
+    }, 2000);
 }
 
 export const dishesLoading = ()  => (dispatch) => ({
