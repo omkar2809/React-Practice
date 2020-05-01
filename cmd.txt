@@ -10,6 +10,8 @@ yarn add bootstrap-social@5.1.1
 yarn add redux@3.7.2
 yarn add react-redux@5.0.7
 
+yarn add redux-thunk@2.2.0
+yarn add redux-logger@3.0.6
 yarn add react-redux-form@1.16.8
 
 ##setting json server
@@ -21,3 +23,8 @@ Download the db.json file provided above to this folder.
 Move to this folder in your terminal window, and type the following at the command prompt to start the server:
 
 json-server --watch db.json -p 3001 -d 2000
+
+yarn add react-transition-group@2.3.0
+
+yarn add react-animation-components@3.0.0
+yarn add prop-types@15.6.0
