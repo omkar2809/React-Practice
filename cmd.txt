@@ -11,3 +11,13 @@ yarn add redux@3.7.2
 yarn add react-redux@5.0.7
 
 yarn add react-redux-form@1.16.8
+
+##setting json server
+npm install json-server -g
+
+Configuring the Server:
+At any convenient location on your computer, create a new folder named json-server, and move to this folder.
+Download the db.json file provided above to this folder.
+Move to this folder in your terminal window, and type the following at the command prompt to start the server:
+
+json-server --watch db.json -p 3001 -d 2000
